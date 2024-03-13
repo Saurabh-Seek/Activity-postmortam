@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid  " >
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+        <img src="activity.svg" alt="" class="mx-5">
+        <div class="container gap-5  ">
+            <a class="navbar-brand text-primary " style="margin-left: 160px;" href="#">Home Page</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse   " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active  ms-5" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Listing
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Search Sidebar</a></li>
+                            <li><a class="dropdown-item" href="#">Search Topbar</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                           
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Activity
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Detail Activity 1</a></li>
+                            <li><a class="dropdown-item" href="#">Detail Activity 2</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">Activity Starttime</a></li>
+                            <li><a class="dropdown-item" href="#">Book & Inquiry Form</a></li>
+                            <li><a class="dropdown-item" href="#">Inquiry Form</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-4" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                            <li><a class="dropdown-item" href="#">Destination</a></li>
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <li><a class="dropdown-item" href="#">404</a></li>
+                            <li><a class="dropdown-item" href="#">Function: Register</a></li>
+                            <li><a class="dropdown-item" href="#">Become Local Expert</a></li>
+                            <li><a class="dropdown-item" href="#">Function: Wishlist</a></li>
+                            <li><a class="dropdown-item" href="#">FAQ</a></li>
+                          
+                        </ul>
+                          
+                    </li>
+                    
+                    <li class="nav-item" style="margin-left: 250px;">
+                        <a class="nav-link active " aria-current="page" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown  " >
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            EUR
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">USD</a></li>
+                            <li><a class="dropdown-item" href="#">AUD</a></li> 
+                        </ul> 
+                    </li>
+                    <img style="width: 30px; height: 30px;" src="ui-delete.svg" alt="">
+                </ul>
+                
+             
+                
+              
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+</div>
+                   <!-- Home section start -->
+
+
+                   <div class="pt-5  "
+        style="height: 90vh; width: 100%; background-image: url(./Banneractivity-min.png); background-repeat: no-repeat; background-size: cover;">
+        <div class="pt-5 text-center" style="height: 50%; width: 100%;">
+            <div class="text-white">
+                <h2>Your world of joy</h2>
+                <p>Find whats makes you happy anytime anywhare</p>
+            </div>
+            <div class="row w-75 bg-white rounded-3 mx-auto">
+                <div class="col-12 col-lg-4 d-flex align-items-center mt-1">
+                    <div class="me-3">
+                        <i class="fa-solid fa-location-arrow"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-start">Locatin</h4>
+                        <p>Where are your going?</p>
+                    </div>
+                </div>
+                <div class="d-lg-none">
+                    <hr>
+                </div>
+                <div class="col-6 col-lg-4 d-flex align-items-center mt-1">
+                    <div class="me-3">
+                        <i onclick="showdate()" class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="text-start">
+                        <h4>Date</h4>
+                        <p>Add date</p>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-4 d-flex align-items-center mt-1">
+                    <div class="me-3">
+                        <i onclick="showdate()" class="fa-solid fa-calendar-days"></i>
+                    </div>
+                    <div class="text-start">
+                        <h4>Check-out</h4>
+                        <p>Add date</p>
+                    </div>
+                </div>
+                <div class="col-12 btn p-0">
+                    <button class="btn w-100 bg-primary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <!-- Home section end -->
+
+
+    <!-- footer section start -->
+
+
+    <!-- <body class="container-fluid"> -->
+       
+        <div class="row m-4 g-0">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <img src="./stand-up-paddle-algarve-450x300.jpg" class="rounded-start-5" alt="" style="width: 100%; height: 100%;">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-4 text-center  border border-2">
+                <h1 class="fs-2 mt-2 fs-lg-4 fs-xl-5">Get special offers, and more from Traveler</h1>
+                <p class="text-secondary">
+                    Subscribe to see secret deals prices drop the moment you sign up!
+                </p>
+                <div class="position-relative d-inline ">
+                    <input onkeypress="myfunction()" id="inputbox" class="p-3 mt-2 rounded-5 border border-secondary"
+                        style="width: 90%; outline-color: blue;" type="email" placeholder="Enter email">
+                    <button class="text-white bg-primary position-absolute rounded-5 border-0"
+                        style="top: -15px; right: 6px; padding: 12px;">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="p-3 mt-3 bg-warning-subtle">
+            <div class="d-flex justify-content-around">
+                <div style="list-style: none;">
+                    <h4>Suppurt</h4>
+                    <div class="fs-6 text-secondary">
+                        <li>Help center</li>
+                        <li>Our covid response</li>
+                        <li>Cancellation option</li>
+                        <li>Safety information</li>
+                    </div>
+                </div>
+                <div style="list-style: none;">
+                    <h4>Company</h4>
+                    <div class="fs-6 text-secondary">
+                        <li>About us</li>
+                        <li>Community blog</li>
+                        <li>Career</li>
+                        <li>Privacy policy</li>
+                        <li>Terms of service</li>
+                    </div>
+                </div>
+                <div style="list-style: none;">
+                    <h4>Contact</h4>
+                    <div class="fs-6 text-secondary">
+                        <li>Partberships</li>
+                        <li>FAQ</li>
+                        <li>Get in touch</li>
+                    </div>
+                </div>
+                <div style="list-style: none;">
+                    <h4>Social</h4>
+                    <div class="fs-6 text-secondary">
+                        <li>Partberships</li>
+                        <li>FAQ</li>
+                        <li>Get in touch</li>
+                    </div>
+                    <div class="fs-6 text-secondary">
+                        <i class="fa-brands fa-square-facebook fs-2" style="color: #74C0FC;"></i>
+                        <i class="fa-brands fa-square-instagram fs-2" style="color: #74C0FC;"></i>
+                        <i class="fa-brands fa-youtube fs-2" style="color: #74C0FC;"></i>
+                        <i class="fa-brands fa-square-twitter fs-2" style="color: #74C0FC;"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <p>&#169; Copyright Saurabh kumar 2024</p>
+                </div>
+                <div>
+                    <i class="fa-brands fa-cc-visa fs-2" style="color: #FF7800;"></i>
+                    <i class="fa-brands fa-cc-mastercard fs-2" style="color: #FF7800;"></i>
+                    <i class="fa-brands fa-cc-discover fs-2" style="color: #FF7800;"></i>
+                    <i class="fa-brands fa-cc-paypal fs-2" style="color: #FF7800;"></i>
+                </div>
+            </div>
+        </div>
+        <script>
+            function myfunction() {
+                let inputbox = document.getElementById('inputbox');
+                if (inputbox.value.length >= 20) {
+                    let trimvalue = inputbox.value.slice(0, 20);
+                    inputbox.value = trimvalue;
+                }
+            }
+        </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
